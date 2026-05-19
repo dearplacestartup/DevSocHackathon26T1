@@ -9,11 +9,21 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#111827',
+    background: '#fff0f3',
+    backgroundElement: '#ffffff',
+    backgroundSelected: '#c9184a',
+    backgroundOther: '#800f2f',
+    buttonText: '#ffffff',
+    textSecondary: '#800f2f',
+    subtext: '#6c7278',
+    other: "#edf1f3",
+    accent: '#ff4d6d',
+    accent1: '#12477b',
+    mapGreen: '#e8f0e8',
+    mapBlock: '#d4e8d4',
+    mapPark: '#b8d9b0',
+    mapWater: '#b8d4e8',
   },
   dark: {
     text: '#ffffff',
@@ -21,6 +31,14 @@ export const Colors = {
     backgroundElement: '#212225',
     backgroundSelected: '#2E3135',
     textSecondary: '#B0B4BA',
+    subtext: '#6c7278',
+    other: "#edf1f3",
+    accent: '#ff4d6d',
+    accent1: '#12477b',
+    mapGreen: '#e8f0e8',
+    mapBlock: '#d4e8d4',
+    mapPark: '#b8d9b0',
+    mapWater: '#b8d4e8',
   },
 } as const;
 
@@ -28,13 +46,9 @@ export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
