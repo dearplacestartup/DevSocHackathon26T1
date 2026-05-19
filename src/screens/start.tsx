@@ -11,7 +11,7 @@ export function StartScreen() {
     <ThemedView style={styles.screen}>
       <TouchableOpacity style={styles.screen} activeOpacity={0.7} onPress={() => go('splash')}>
         <Image
-        source={require('@/assets/images/logo.png')}
+        source={require('@/assets/logo.png')}
         resizeMode="contain"
         style={styles.logo}
         />
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.five,
   },
   logo: {
-    width: 300,
-    height: 300
+    width: 175,
+    height: 175
   },
 });
