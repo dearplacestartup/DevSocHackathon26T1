@@ -31,8 +31,8 @@ export function useApp() {
 // Screens
 import { StartScreen } from '@/screens/start';
 import { SplashScreen } from '@/screens/splash';
-/*import { LoginScreen }  from '@/screens/login';
-import { SignUpScreen } from '@/screens/signup';
+import { LoginScreen }  from '@/screens/login';
+/*import { SignUpScreen } from '@/screens/signup';
 import { MapScreen }    from '@/screens/map';
 import { DropPinScreen }from '@/screens/drop';
 import { NearbyScreen } from '@/screens/nearby';
@@ -43,8 +43,8 @@ function renderScreen(screen: ScreenId) {
   switch (screen) {
     case 'start':  return <StartScreen />;
     case 'splash':  return <SplashScreen />;
-    /*case 'login':   return <LoginScreen />;
-    case 'signup':  return <SignUpScreen />;
+    case 'login':   return <LoginScreen />;
+    /*case 'signup':  return <SignUpScreen />;
     case 'map':     return <MapScreen />;
     case 'drop':    return <DropPinScreen />;
     case 'nearby':  return <NearbyScreen />;
