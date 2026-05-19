@@ -18,7 +18,7 @@ export function SplashScreen() {
 
   return (
     <LinearGradient
-      colors={[Colors.light.accent1 + '80', Colors.light.accent + '80']}
+      colors={[Colors.light.accent1 + '80', Colors.light.accent + '40', Colors.light.accent + '80']}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={styles.screen}
